@@ -23,7 +23,6 @@ Gem::Specification.new do |s|
     "communication, it is a library for communication within the browser."
 
   s.files = Dir["{lib,vendor}/**/*"] + ["LICENCE.rdoc", "Rakefile", "README.rdoc"]
-  s.test_files = Dir["test/**/*"]
 
   s.add_dependency "railties", ">= 3.1.0"
 
