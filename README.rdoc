@@ -1,4 +1,4 @@
-= Pmrpc for Rails
+= Pmrpc packaged for Rails
 
 Author:: Robert Haines
 Contact:: mailto:rhaines@manchester.ac.uk
@@ -8,7 +8,7 @@ Copyright:: (c) 2013 Robert Haines
 
 == Synopsis
 
-This gem packages the Pmrpc HTML5 JavaScript library for the Rails asset
+This gem packages the Pmrpc HTML5 JavaScript library for the Rails (3.1+) asset
 pipeline.
 
 == Description
@@ -26,3 +26,44 @@ within the browser.
 Pmrpc is available from https://github.com/izuzak/pmrpc
 
 This is purely a gem to package the Pmrpc library for Ruby on Rails.
+
+== Installation
+
+Simply add this gem to your Gemfile:
+
+ gem "pmrpc-rails"
+
+And add the following to your JavaScript manifest (usually application.js):
+
+ //= require pmrpc
+
+And that is it!
+
+== Usage
+
+Please see the {Pmrpc documentation}[http://ivanzuzak.info/pmrpc/apidocs.html]
+for how to use it.
+
+== Bugs
+
+For bugs in Pmrpc itself please see the
+{Pmrpc issue tracker}[https://github.com/izuzak/pmrpc/issues]
+
+For bugs in this packaging gem please use the
+{Pmrpc Rails issue tracker}[https://github.com/hainesr/pmrpc-rails/issues]
+
+== Customizing Pmrpc itself
+
+This repository includes the Pmrpc repository as a submodule; it is
+{contributor friendly}[http://www.solitr.com/blog/2012/04/contributor-friendly-gems/]!
+
+So you can easily work on the pmrpc code:
+
+ cd pmrpc               # go into the pmrpc submodule
+ git checkout master
+ < make your changes >
+ cd ..                  # go back out to the pmrpc-rails repository root
+ rake build             # rebuild the gem with your pmrpc changes
+
+Then if your main app is using your local checkout of the pmrpc-rails gem then
+you will be using your new version of pmrpc next time you refresh your browser.
