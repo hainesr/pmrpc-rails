@@ -1,0 +1,3 @@
+[submodule "pmrpc"]
+	path = pmrpc
+	url = https://github.com/izuzak/pmrpc.git
