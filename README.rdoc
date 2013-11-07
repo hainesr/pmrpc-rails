@@ -1,0 +1,28 @@
+= Pmrpc for Rails
+
+Author:: Robert Haines
+Contact:: mailto:rhaines@manchester.ac.uk
+URL:: https://github.com/hainesr/pmrpc-rails
+Licence:: Apache 2.0 (See LICENCE or http://www.apache.org/licenses/LICENSE-2.0)
+Copyright:: (c) 2013 Robert Haines
+
+== Synopsis
+
+This gem packages the Pmrpc HTML5 JavaScript library for the Rails asset
+pipeline.
+
+== Description
+
+Pmrpc is an HTML5 JavaScript library for message passing, remote procedure
+call and publish-subscribe cross-contex communication in the browser. The
+library provides a simple API for exposing and calling procedures between
+browser windows, iframes and web workers, even between different origins.
+Pmrpc also provides several advanced features: callbacks similar to AJAX
+calls, ACL-based access control, asynchronous procedure support and
+fault-tolerance via retries. In case this wasn't clear, pmrpc is not a
+library for browser-server communication, it is a library for communication
+within the browser.
+
+Pmrpc is available from https://github.com/izuzak/pmrpc
+
+This is purely a gem to package the Pmrpc library for Ruby on Rails.
