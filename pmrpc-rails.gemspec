@@ -23,7 +23,7 @@ Gem::Specification.new do |s|
     "case this wasn't clear, pmrpc is not a library for browser-server "\
     "communication, it is a library for communication within the browser."
 
-  s.files = Dir["{lib,vendor}/**/*"] + ["LICENCE.rdoc", "Rakefile", "README.rdoc"]
+  s.files = Dir["{lib,vendor}/**/*"] + ["CHANGES.rdoc", "LICENCE.rdoc", "Rakefile", "README.rdoc"]
 
   s.add_dependency "railties", ">= 3.1.0"
 
