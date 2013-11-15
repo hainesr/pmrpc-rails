@@ -9,6 +9,7 @@ Gem::Specification.new do |s|
   s.version     = Pmrpc::Rails::VERSION
   s.authors     = ["Robert Haines"]
   s.email       = ["rhaines@manchester.ac.uk"]
+  s.license     = "Apache 2.0"
   s.homepage    = "https://github.com/hainesr/pmrpc-rails"
   s.summary     = "Package the Pmrpc HTML5 JavaScript library for the Rails asset pipeline."
   s.description = "Pmrpc (https://github.com/izuzak/pmrpc) is an HTML5 "\
